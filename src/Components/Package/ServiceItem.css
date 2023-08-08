@@ -1,0 +1,83 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+/* ServiceItem.css */
+.serviceItem {
+  display: grid;
+  row-gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.serviceItem:hover {
+  background: var(--cardHover);
+  box-shadow: 1px 4px 4px rgba(140, 140, 141, 0.549);
+}
+.serviceItem .img {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+.serviceItem .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 2s ease;
+}
+.serviceItem .img:hover {
+  transform: scale(1.1);
+}
+.serviceItem .info {
+  padding: 1rem;
+}
+.serviceItem .info .title {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+  width: 100%;
+}
+.serviceItem .info .desc {
+  color: var(--textColor);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 840px) {
+  .serviceItem {
+    height: auto;
+  }
+}
+@media screen and (max-width: 865px) {
+  .serviceItem {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=ServiceItem.css.map */

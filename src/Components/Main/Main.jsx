@@ -18,17 +18,12 @@ import img5 from "../../Assets/img(5).jpeg";
 import img6 from "../../Assets/img(6).jpeg";
 import img7 from "../../Assets/img(7).jpeg";
 
-function createSlug(title) {
-  return title.toLowerCase().replace(/ /g, "-");
-}
-
 
 
 const Data = [
   {
     id: 1,
     imgSrc: img,
-    slug1: createSlug("Trip Ijen"),
     slug: "trip-ijen",
     destTitle: "Kawah Ijen",
     location: "Banyuwangi",
@@ -40,6 +35,7 @@ const Data = [
   {
     id: 2,
     imgSrc: img2,
+    slug: "de-djawatan",
     destTitle: "Pulau Merah",
     location: "Banyuwangi",
     grade: "The Perfect Beach",
@@ -50,16 +46,18 @@ const Data = [
   {
     id: 3,
     imgSrc: img3,
-    destTitle: "Pancer Beach",
+    slug: "tour-alas-purwo",
+    destTitle: "Alas Purwo",
     location: "Banyuwangi",
     grade: "Wonderful Private Beach",
     fees: "$150",
     description:
-      "Pancer Beach, also known as Pantai Pancer, is a beautiful and popular beach located in Banyuwangi, East Java, Indonesia. It is situated approximately 55 kilometers from the city center of Banyuwangi and can be reached in about 1.5 - 2 hours by car.",
+      "Alas Purwo National Park is a protected area located in the eastern part of Java, Indonesia, specifically in the Banyuwangi Regency of East Java province. It is one of the oldest and most significant national parks in Indonesia, known for its rich biodiversity, unique ecosystems, and cultural significance.",
   },
   {
     id: 4,
     imgSrc: img4,
+    slug: "de-djawatan",
     destTitle: "De Djawatan",
     location: "Banyuwangi",
     grade: "Specially Forest",
@@ -71,6 +69,7 @@ const Data = [
     id: 5,
     imgSrc: img5,
     destTitle: "GreenBay(Teluk Hijau)",
+    slug: "de-djawatan",
     location: "Banyuwangi",
     grade: "Perfecly Turquoise Water",
     fees: "$450",
@@ -81,6 +80,7 @@ const Data = [
     id: 6,
     imgSrc: img6,
     destTitle: "Desa Osing",
+    slug: "tour-kota-banyuwangi",
     location: "Banyuwangi",
     grade: "Traditional Arts and Culture",
     fees: "$450",
@@ -91,6 +91,7 @@ const Data = [
     id: 7,
     imgSrc: img7,
     destTitle: "Tabuhan Island",
+    slug: "menjangan-tabuhan",
     location: "Banyuwangi",
     grade: "Snorkeling and Diving",
     fees: "$450",
@@ -117,7 +118,7 @@ const Main = () => {
 
       <div className="setContent grid">
         {Data.map(
-          ({ id, imgSrc, destTitle, location, grade, fees, description, slug, slug1}) => {
+          ({ id, imgSrc, destTitle, location, grade, fees, description, slug}) => {
             return (
               <div key={id} className="singleDestination">
                 <div data-aos="fade-up" className="imageDiv">

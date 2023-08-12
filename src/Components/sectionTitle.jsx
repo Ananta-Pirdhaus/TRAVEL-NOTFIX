@@ -5,7 +5,8 @@ const SectionTitleStyle = styled.div`
   text-align: center;
   p {
     font-family: "Poppins";
-    font-size: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
   }
   h2 {
     font-family: "Poppins";
@@ -31,7 +32,6 @@ export default function SectionTitle({
   return (
     <SectionTitleStyle className="section-title">
       <p>{subheading}</p>
-      <h2>{heading}</h2>
     </SectionTitleStyle>
   );
 }

@@ -15,7 +15,7 @@
 
 .about{
     width: 100%;
-
+    
     .secTitle{
         .title{
             position: relative;
@@ -23,6 +23,7 @@
             color: var(--textColor);
             margin: 1rem 0;
             z-index: 2;
+            margin-top: 50px;
 
             &::after{
                 position: absolute;

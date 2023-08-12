@@ -5,7 +5,7 @@ import imgP3 from "../../Assets/Image/imgP(3).jpeg";
 import imgP4 from "../../Assets/Image/imgP(4).jpeg";
 import imgP5 from "../../Assets/Image/imgP(5).jpeg";
 import imgP6 from "../../Assets/Image/imgP(6).png";
-import imgP7 from "../../Assets/Image/imgP(7).png";
+import imgP7 from "../../Assets/Image/imgP(8).jpeg";
 
 function createSlug(title) {
   return title.toLowerCase().replace(/ /g, "-");
@@ -16,7 +16,7 @@ const assetData = [
     id: 1,
     name: "Tour de Ijen",
     slug: createSlug("Trip Ijen"),
-    desc: "An application to track your all data from one place. I developed the website and the mobile app",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP1,
     Link: "paketIdjen",
   },
@@ -24,7 +24,7 @@ const assetData = [
     id: 2,
     name: "De Djawatan",
     slug: createSlug("De Djawatan"),
-    desc: "An app to help people to get an overview of how they can make the city beautiful.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP2,
     Link: "paketDjawatan",
   },
@@ -32,7 +32,7 @@ const assetData = [
     id: 3,
     name: "Menjangan",
     slug: createSlug("Menjangan Tabuhan"),
-    desc: "Using this app you can track any e coin. Also you will get a good advise about investment form the professional",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP3,
     Link: "paketRed",
   },
@@ -40,7 +40,7 @@ const assetData = [
     id: 4,
     name: "Tour Kota Banyuwangi",
     slug: createSlug("Tour Kota Banyuwangi"),
-    desc: "A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP4,
     Link: "paketTourKota",
   },
@@ -48,7 +48,7 @@ const assetData = [
     id: 5,
     name: "Tour Taman Nasional Baluran",
     slug: createSlug("Tour Baluran"),
-    desc: "A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP5,
     Link: "paketBaluran",
   },
@@ -56,7 +56,7 @@ const assetData = [
     id: 6,
     name: "Tour Alas Purwo",
     slug: createSlug("Tour Alas Purwo"),
-    desc: "A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP6,
     Link: "paketAlasPurwo",
   },
@@ -64,7 +64,7 @@ const assetData = [
     id: 7,
     name: "Sukamade",
     slug: createSlug("Sukamade"),
-    desc: "A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: imgP7,
     Link: "paketSukamade",
   },

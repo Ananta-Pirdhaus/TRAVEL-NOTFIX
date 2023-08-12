@@ -10,7 +10,7 @@ const ProjectStyles = styled.div`
   padding: 10rem 0;
   .project__allItem {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
   }
@@ -78,8 +78,8 @@ export default function ServiceSection() {
       <div>
         <div className="container">
           <SectionTitle
-            heading="Our Package"
-            subheading="Some of our Package"
+            // heading="Our Package"
+            subheading="Our Package"
           />
           <div className="projects__searchBar">
             <form>
